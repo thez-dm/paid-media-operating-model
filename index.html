@@ -249,14 +249,14 @@ footer p{font-size:13.5px;color:var(--muted);margin:0;max-width:70ch}
     <p class="kicker">01 · The problem</p>
     <div class="narrow">
       <h2>The account has no memory, and no standard of proof.</h2>
-      <p class="lede">Many paid accounts are run on recall and reaction: log in, read what the platform chose to surface, adjust, move on. It works, in the sense that the account keeps running. What it doesn't do is accumulate.</p>
+      <p class="lede">Many paid accounts are run on recall and reaction: log in, read what the platform chose to surface, adjust, move on. It works – the account keeps running. But nothing accumulates.</p>
       <p>Two costs follow, and both are invisible on a dashboard. The first is that the intelligence lives in one person's head – so it leaves when they do, and every handover starts the learning curve again. The second is that without a written standard of proof, the account makes the same two errors forever.</p>
     </div>
 
     <div class="grid2" style="margin-top:34px">
       <div class="card">
         <h4>Error one – believing a hot streak</h4>
-        <p>A keyword, audience or creative with one conversion off twenty clicks looks like a star and means nothing. Budget follows it. The regression to the mean arrives three weeks later, by which point nobody remembers the decision that caused it.</p>
+        <p>A keyword, audience or creative with one conversion off twenty clicks looks like a star and means nothing. Budget follows it. The regression to the mean arrives three weeks later, and by then nobody remembers the decision that caused it.</p>
       </div>
       <div class="card">
         <h4>Error two – killing a winner in a quiet fortnight</h4>
@@ -284,8 +284,8 @@ footer p{font-size:13.5px;color:var(--muted);margin:0;max-width:70ch}
       <div class="comp">
         <div class="idx">COMPONENT 01 – PREREQUISITE</div>
         <h3>A context document a machine can be held to</h3>
-        <p>The bottleneck in account automation isn't engineering – a diagnosis I'm borrowing from Nils Rooijmans rather than claiming. The plumbing is mostly solved, and an assistant will write most of it. What can't be installed is context – everything about this business a model cannot infer: what <em>good</em> looks like here, what we never say, which trade-offs are ours to make, what a lead is actually worth at each stage. Without it, an agent is an intern with terrifying confidence.</p>
-        <p>So the first artefact isn't code. It's a written specification of what good means in this account, precise enough that a system can be checked against it:</p>
+        <p>The bottleneck in account automation isn't engineering. That's Nils Rooijmans' diagnosis, not mine. The plumbing is mostly solved, and an assistant will write most of it. What can't be installed is context – everything about this business a model cannot infer: what <em>good</em> looks like here, what we never say, which trade-offs are ours to make, what a lead is actually worth at each stage. Without it, an agent is an intern with terrifying confidence.</p>
+        <p>So the first thing to build isn't code. It's a written specification of what good means in this account, precise enough that a system can be checked against it:</p>
         <ul>
           <li>One primary conversion action, and a written value for every funnel stage behind it – so the machine optimises toward money rather than toward events.</li>
           <li>What each channel is actually for, written down before a euro moves between them.</li>
@@ -304,17 +304,17 @@ footer p{font-size:13.5px;color:var(--muted);margin:0;max-width:70ch}
           <div class="rung"><div class="n">01</div><div><h4>Check</h4><p>Scripts that read the account and say when something is off. Critically, they alarm on the <em>silence</em> too – the tracking break that reports zero and hides for three weeks is the failure class that invalidates everything built on top of it.</p></div><div class="tag">first rung</div></div>
           <div class="rung"><div class="n">02</div><div><h4>Chart</h4><p>The same reads, joined to pipeline and revenue in a store we own – not the platform's reporting – and made visible over time. This is where spend stops being a cost line and becomes evidence, because a pattern you can see is a pattern you can argue about.</p></div><div class="tag">the data layer</div></div>
           <div class="rung"><div class="n">03</div><div><h4>Change</h4><p>Acting on what's detected – first as a proposal a human signs, later automatic within written bounds. An LLM does the reasoning that used to be a spreadsheet: read the query file, cluster the intent, draft the negative list, write the case for it.</p></div><div class="tag">proposed, then bounded</div></div>
-          <div class="rung"><div class="n">04</div><div><h4>Cognition</h4><p>Systems that reason across the account – connecting a shift in query mix to a creative result to a pipeline change. Only credible once the first three rungs are boring.</p></div><div class="tag">last – earned</div></div>
+          <div class="rung"><div class="n">04</div><div><h4>Cognition</h4><p>Systems that reason across the account – connecting a shift in query mix to a creative result to a pipeline change. Only credible once the first three rungs are routine.</p></div><div class="tag">last – earned</div></div>
         </div>
-        <div class="why"><b>The rule:</b> prove each rung is boring before building the next. A loop built on an account that lies just reaches the wrong conclusion faster, and with more confidence.</div>
+        <div class="why"><b>The rule:</b> prove each rung is routine before building the next. A loop built on an account that lies just reaches the wrong conclusion faster, and with more confidence.</div>
       </div>
 
       <div class="comp">
         <div class="idx">COMPONENT 03 – THE STANDARD</div>
         <h3>Two evidence rules, made mechanical</h3>
-        <p>This is what stops the system industrialising the two errors above. Both are enforced in code rather than remembered in a meeting.</p>
+        <p>This is what stops the system making the two errors above at scale. Both are enforced in code rather than remembered in a meeting.</p>
         <ul>
-          <li><strong>Nothing gets believed on a hot streak.</strong> Until a line item has real spend behind it, the account's own track record speaks for it. One lucky week moves nothing; a consistent month moves money.</li>
+          <li><strong>Nothing gets believed on a hot streak.</strong> Until a line item has real spend behind it, the account's own track record speaks for it. One lucky week moves nothing. A consistent month moves money.</li>
           <li><strong>Nothing gets switched off without proof.</strong> The bar for a destructive change is deliberately higher than the bar for a reversible one, because the two mistakes are not symmetric. A pause guard sits on anything that can't be undone.</li>
         </ul>
         <p>Directional at the strategy level, rigorous at the destructive one. I'd rather know what's likely true across a hundred accounts than pretend to know exactly what worked in one – but <em>likely true</em> is not a good enough reason to switch something off.</p>
@@ -455,8 +455,8 @@ footer p{font-size:13.5px;color:var(--muted);margin:0;max-width:70ch}
     </div>
 
     <div class="metrics">
-      <div class="m"><div class="ml">Measurement trust</div><div class="mr">Share of conversion actions verified end to end, and time from a tracking break to it being noticed. The unglamorous one that determines whether any other number means anything.</div></div>
-      <div class="m"><div class="ml">Evidence coverage</div><div class="mr">Share of account changes that shipped with a written reason and a stated success test. Target: all of them. This is the number that tells you whether the system is real or decorative.</div></div>
+      <div class="m"><div class="ml">Measurement trust</div><div class="mr">Share of conversion actions verified end to end, and time from a tracking break to it being noticed. This one decides whether any other number means anything.</div></div>
+      <div class="m"><div class="ml">Evidence coverage</div><div class="mr">Share of account changes that shipped with a written reason and a stated success test. Target: all of them. This number shows whether the system is real or just there to look good.</div></div>
       <div class="m"><div class="ml">Decision latency</div><div class="mr">Time from a signal appearing in the account to a decision being made about it. The direct measure of what the automation actually bought.</div></div>
       <div class="m"><div class="ml">Reversal rate</div><div class="mr">How often a change gets undone within the quarter. Rising means the evidence bar is too low. At zero, it's too high and nothing is being tested.</div></div>
       <div class="m"><div class="ml">Cost per qualified opportunity</div><div class="mr">Against the month-one baseline and against the value we assigned – not against last month, and not against a benchmark from a different business.</div></div>
