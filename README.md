@@ -4,7 +4,7 @@ A single-page answer to a job application question:
 
 > Describe an AI-powered system, workflow, or automation you've personally built to support account targeting, campaign testing, or paid media optimisation. What problem did it solve, and what was the measurable outcome?
 
-Rather than describe an automation built against bidding controls that no longer exist, this is the system I'd build now – four components in the order they have to be built, the approval gate that sits over them, and the outcome I'd sign up to be judged on at 90 days.
+Most of what I built in previous roles still stands. What's moved is the automation layer – so rather than describe a workflow from before, this is the system I'd build now: four components in the order they have to be built, the approval gate that sits over them, and the outcome I'd sign up to be judged on at 90 days.
 
 **Live:** https://thez-dm.github.io/paid-media-operating-model/
 
